@@ -1,0 +1,20 @@
+<template name="postsList">
+    <div class="posts">
+        {{#each posts}}
+            {{> postItem}}
+        {{/each}}
+    </div>
+</template>
+
+
+<template name="postItem">
+    <div class="post panel panel-default">
+        <div class="panel-heading">
+            <span class="nickname">{{nickname}}</span>
+            <span class="pull-right at">{{at}}</span>
+        </div>
+        <div class="panel-body">
+            {{content}}
+        </div>
+    </div>
+</template>
